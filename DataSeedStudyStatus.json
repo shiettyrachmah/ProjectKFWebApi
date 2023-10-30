@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "StatusName": "Start up"
+  },
+  {
+    "Id": 2,
+    "StatusName": "Sites initiated"
+  },
+  {
+    "Id": 3,
+    "StatusName": "Recruiting"
+  },
+  {
+    "Id": 4,
+    "StatusName": "Recruiting Close"
+  },
+  {
+    "Id": 5,
+    "StatusName": "Last Site Recruiting"
+  },
+  {
+    "Id": 6,
+    "StatusName": "CSR Closed"
+  }
+]

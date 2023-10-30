@@ -1,0 +1,19 @@
+[
+  {
+    "Id": "D950DC52-4BC3-4909-9CEF-5898BC58FCC3",
+    "StudyId": "STD_009",
+    "VersionID": 1,
+    "ProtocolTitle": "Vaccine against unique TB antigen",
+    "ProtocolCode": "TB-001",
+    "MoleculesID": "0EC8061C-594B-496A-B7BB-99190CFEA9FA",
+    "StatusStudyID": 1,
+    "IsActive": 1,
+    "IsDeleted": 0,
+    "CreatedBy": "paritosh.K@innogene.com",
+    "CreatedDate": "2023-08-15 10:10:10",
+    "UpdatedBy": "",
+    "UpdatedDate": "",
+    "State": ""
+  }
+]
+   
