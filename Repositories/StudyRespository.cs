@@ -44,14 +44,11 @@ namespace WebAPI.Repositories
             return _db.Study.Where(x => x.Id.ToString() == id).FirstOrDefaultAsync(); 
         }
 
-        public async Task<Study> UpdateStudy(Study std)
+        public async Task<Study> UpdateStudy(Study obj)
         {
-            if(std != null)
-            {
-                await _db.SaveChangesAsync();
-            }
+            await _db.SaveChangesAsync();
 
-            return std;
+            return obj;
         }
     }
 }

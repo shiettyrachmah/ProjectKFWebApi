@@ -102,7 +102,7 @@ namespace ProjectKFWebApi.Controllers
             }
         }
 
-        [HttpPost("UpdateData")]
+        [HttpPut]
         public async Task<ActionResult<Study>> UpdateData([FromForm] string jsonData)
         {
             try

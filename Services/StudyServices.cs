@@ -78,27 +78,22 @@ namespace WebAPI.Services
 
             if (checkDataExist != null)
             {
-                Study std = new Study()
-                {
-                    Id = obj.Id,
-                    StudyId = obj.StudyId,
-                    VersionID = obj.VersionID,
-                    ProtocolCode = obj.ProtocolCode,
-                    ProtocolTitle = obj.ProtocolTitle,
-                    MoleculesID = obj.MoleculesID,
-                    StatusStudyID = obj.StatusStudyID,
-                    IsActive = obj.IsActive,
-                    IsDeleted = obj.IsDeleted,
-                    CreatedBy = obj.CreatedBy,
-                    CreatedDate = DateTime.Now,
-                    UpdatedBy = obj.UpdatedBy,
-                    UpdatedDate = DateTime.Now,
-                    State = obj.State
-                };
-
-                await _repo.UpdateStudy(std);
-
-                checkDataExist = std;
+                checkDataExist.Id = obj.Id;
+                checkDataExist.StudyId = obj.StudyId;
+                checkDataExist.VersionID = obj.VersionID;
+                checkDataExist.ProtocolCode = obj.ProtocolCode;
+                checkDataExist.ProtocolTitle = obj.ProtocolTitle;
+                checkDataExist.MoleculesID = obj.MoleculesID;
+                checkDataExist.StatusStudyID = obj.StatusStudyID;
+                checkDataExist.IsActive = obj.IsActive;
+                checkDataExist.IsDeleted = obj.IsDeleted;
+                checkDataExist.CreatedBy = obj.CreatedBy;
+                checkDataExist.CreatedDate = obj.CreatedDate;
+                checkDataExist.UpdatedBy = obj.UpdatedBy;
+                checkDataExist.UpdatedDate = DateTime.Now;
+                checkDataExist.State = obj.State;
+                
+                await _repo.UpdateStudy(checkDataExist);
             }
             else
             {
